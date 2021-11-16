@@ -102,3 +102,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 ```
+
+# submodule
+## 查看：git submodule
+## 初始化：git submodule init，clone项目之后只需要一次
+## 更新：git submodule update
+
+# editorkit，termux-view需要手工加下local.properties
