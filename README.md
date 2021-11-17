@@ -109,3 +109,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 ## 更新：git submodule update
 
 # editorkit，termux-view需要手工加下local.properties
+
+# 本地编译libcore需要配置GOPATH=/usr/local/go
+# realpath: https://www.codenong.com/3572030/
