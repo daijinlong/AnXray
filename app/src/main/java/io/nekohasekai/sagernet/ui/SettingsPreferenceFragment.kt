@@ -152,7 +152,9 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         val transproxyPort = findPreference<EditTextPreference>(Key.TRANSPROXY_PORT)!!
         val transproxyMode = findPreference<SimpleMenuPreference>(Key.TRANSPROXY_MODE)!!
         val enableLog = findPreference<SwitchPreference>(Key.ENABLE_LOG)!!
-        val probeIndival = findPreference<EditTextPreference>(Key.PROBE_INTERVAL)!!
+
+        // todo, 暂时先屏蔽了
+//        val probeIndival = findPreference<EditTextPreference>(Key.PROBE_INTERVAL)!!
 
         transproxyPort.isEnabled = requireTransproxy.isChecked
         transproxyMode.isEnabled = requireTransproxy.isChecked
@@ -246,8 +248,9 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
 
         enableLog.onPreferenceChangeListener = reloadListener
 
-        probeIndival.setOnBindEditTextListener(EditTextPreferenceModifiers.Number)
-        probeIndival.onPreferenceChangeListener = reloadListener
+        // todo, 暂时先屏蔽了
+//        probeIndival.setOnBindEditTextListener(EditTextPreferenceModifiers.Number)
+//        probeIndival.onPreferenceChangeListener = reloadListener
 
         providerTrojan.onPreferenceChangeListener = reloadListener
         providerShadowsocksAEAD.onPreferenceChangeListener = reloadListener
